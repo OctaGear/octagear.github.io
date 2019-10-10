@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	
+	
+	<style type="text/css">
+	@keyframes highlight {
+		0%, 100% {box-shadow: 0px 0px 0px 0px #f07b05;}
+		20%	{box-shadow: 0px 0px 0px 5px #f07b05;}
+	}
+	
+	body {
+		height: 100vh;
+		margin: 0px;
+		background-color: #1f1f1f;
+		
+		font-family: 'Helvetica Neue','Fira Sans','Droid Sans',sans-serif;
+	}
+	
+	p {
+		margin: 5px;
+	}
+	
+	
+	.main_wrapper {
+		position: relative;
+		left: 50%;
+		margin-left: -284px;
+		
+		width: 568px;
+		min-height: 900px;
+		
+		box-sizing: border-box;
+		border: 3px solid #f07b05;
+		background-color: #1f1f1f;
+		
+		margin-top:;
+		margin-bottom:;
+		
+	}
+	
+	
+	p.top {
+		color: #fff;
+		font-size: 20px;
+	}
+	
+	p.un {
+		color: #8c8c8c;
+		font-size: 18px;
+	}
+	
+	
+	
+	
+	
+	.main_header {
+		position: absolute;
+		top: 0px;
+		width: 100%;
+		
+		background-color: #f07b05;
+		vertical-align: middle;
+	}
+	
+	p.header {
+		color: #8c4803;
+		font-size: 28px;
+		margin: 5px 0px 8px 5px;
+	}
+	
+	
+	
+	
+	
+	.listelem_wrapper {
+		max-height: 545px;
+		overflow: auto;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
+	
+	.listelem_wrapper::-webkit-scrollbar { 
+    display: none;
+	}
+	
+	.main_listelem {
+		box-sizing: border-box;
+	
+		position: relative;
+		width: 100%;
+		padding: 9px 0px 9px 5px;
+		margin: 10px 0px;
+		
+		background-color: #8c4803;
+		vertical-align: middle;
+	}
+	
+	p.listelem {
+		color: #f07b05;
+		font-size: 20px;
+		margin: 9px 0px 9px 5px;
+	}
+	
+	.main_listelem:hover {
+		background-color: #f07b05;
+		border: solid 0px #f07b05;
+		animation: highlight 0.2s linear forwards;
+	}
+	
+	.main_listelem:hover p.listelem {
+		color: #8c4803;
+	}
+	
+	
+	
+	
+	
+	.shadowcaster {
+		position: absolute;
+		bottom: 299px;
+		width: 100%;
+		height: 100px;
+		
+		z-index: 3;
+		pointer-events: none;
+		
+		background-image: linear-gradient(rgba(31,31,31,0), rgba(31,31,31,1));
+		border-bottom: solid 1px #8c4803;
+	}
+	
+	.subinfo_wrapper {
+		background-color: #262626;
+		
+		position: absolute;
+		margin: 10px;
+		bottom: 0px;
+		width: 542px;
+		height: 200px;
+		
+		border: solid 1px #8c4803;
+	}
+	
+	.subinfo_elem {
+		width: 100%;
+		background-color: #333;
+	}
+	
+	
+	
+	
+	
+	@keyframes noise{
+		0%		{clip: rect(0px,600px,50px,0px);}
+		100%	{clip: rect(1000px,600px,1050px,0px);}
+	}
+	
+	.noise{
+		position: absolute;
+		left: 50%;
+		margin-left: -288px;
+		
+		width: 576px;
+		min-height: 900px;
+		
+		box-sizing: border-box;
+		border: 10px solid #f07b05;
+		z-index: -1;
+		clip:rect(0px, 600px, 50px, 0px);
+		animation: noise 1s infinite linear alternate-reverse;
+	}
+	</style>
+	
+</head>
+<body>
+
+	<div class="noise"></div>
+	
+	<div class="main_wrapper">
+		<div class="main_header">
+			<p class="header">::TITLE</p>
+		</div>
+		
+		<p style="height: 50px; margin: 0px;">easter egg</p>
+		
+		<div class="listelem_wrapper">
+			<div class="main_listelem" onclick="alert('Hi')">
+				<p class="listelem">Element #1</p>
+			</div>
+			<div class="main_listelem" onclick="alert('Hi')">
+				<p class="listelem">Element #2</p>
+			</div>
+			<div class="main_listelem" onclick="alert('Hi')">
+				<p class="listelem">Element #3</p>
+			</div>
+			<div class="main_listelem" onclick="alert('Hi')">
+				<p class="listelem">Element #4</p>
+			</div>
+			<div class="main_listelem" onclick="alert('Hi')">
+				<p class="listelem">Element #5</p>
+			</div>
+			<div class="main_listelem" onclick="alert('Hi')">
+				<p class="listelem">Element #6</p>
+			</div>
+			<div class="main_listelem" onclick="alert('Hi')">
+				<p class="listelem">Element #7</p>
+			</div>
+			<div class="main_listelem" onclick="alert('Hi')">
+				<p class="listelem">Element #8</p>
+			</div>
+			<div class="main_listelem" onclick="alert('Hi')">
+				<p class="listelem">Element #9</p>
+			</div>
+			<div class="main_listelem" onclick="alert('Hi')">
+				<p class="listelem">Element #10</p>
+			</div>
+			<div class="shadowcaster"></div>
+		</div>
+		
+		
+			<div class="subinfo_wrapper">
+				<div class="subinfo_elem">
+					<p class="top">This is just a template that is supposed to look nice</p>
+					<p class="un">I wanted to depic the style of an elite dangerous ui</p>
+				</div>
+				<div class="subinfo_elem">
+					<p class="top">I could enter either some random nonsense information</p>
+					<p class="un">Maybe add some social media links</p>
+					<p class="un">or...ah, well i dont know</p>
+				</div>
+				<div class="subinfo_elem">
+					<p class="top">Or I could add basic information for visitors</p>
+					<p class="un">Content like an impressum or contact data</p>
+				</div>
+			</div>
+		
+	</div>
+
+
+</body>
+</html>
